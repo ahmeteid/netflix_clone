@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+/* Global Variabel */
+.main-space-section {
+    height: 10px;
+    width: 100%;
+    background-color: #232323;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/header-image.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 8%;
+}
+
+.header nav img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header nav .btns button {
+    background-color: #e50914;
+    color: #fff;
+    padding: 7px 15px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    align-items: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+}
+
+.header nav .btns .language-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-right: 10px;
+}
+
+.header nav .btns .language-btn:hover {
+    background-color: #ad050d;
+    border-color: #ad050d;
+    /* -webkit-text-stroke: .5px #ad050d; */
+}
+
+.header nav .btns .language-btn img {
+    width: 10px;
+}
+
+.header nav .btns .sigin-btn:hover {
+    background-color: #ad050d;
+}
+
+.header .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    margin-top: 100px;
+    text-transform: capitalize;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.header .header-content h1 {
+    font-size: 60px;
+    max-width: 650px;
+    line-height: 70px;
+    font-weight: 600;
+}
+
+.header .header-content h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.header .header-content .email-signup {
+    background-color: #fff;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.header .header-content .email-signup input {
+    flex: 1;
+    outline: 0;
+    border: 0;
+    margin-left: 20px;
+}
+
+.header .header-content .email-signup button {
+    padding: 15px 30px;
+    background-color: #e50914;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
