@@ -13,6 +13,8 @@ body {
 .main-space-section {
     height: 10px;
     width: 100%;
+    position: absolute;
+    left: 0;
     background-color: #232323;
     border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -135,4 +137,75 @@ body {
     cursor: pointer;
     outline: none;
     border: none;
+}
+/* End Header */
+
+/* Strat Features */
+.features {
+    padding: 50px 12%;
+    font-size: 22px;
+    color: #fff;
+}
+
+.features .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px 0;
+    align-items: center;
+}
+
+.features .row .text-col,
+.features .row .img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.features .row .img-col img {
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.features .row .text-col h2 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.features .row .text-col p {
+    text-transform: capitalize;
+    font-size: 16px;
+}
+/* End Features */
+
+/* Start Media Query */
+@media (max-width: 767px) {
+    .header nav {
+        margin-top: 5px;
+    }
+
+    .header nav img {
+        width: 100px;
+    }
+
+    .header .header-content {
+        margin-top: 150px;
+    }
+
+    .header .header-content h1 {
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .header .header-content .email-signup button {
+        padding: 7px 30px;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    .features .row {
+        flex-direction: column;
+    }
 }
